@@ -1,4 +1,4 @@
-var persons = [
+const persons = [
 { name: 'Ben Affleck',       gender: 'Male'   }, 
 { name: 'Lady Gaga',         gender: 'Female' }, 
 { name: 'Tom cruise',        gender: 'Male'   }, 
@@ -7,7 +7,7 @@ var persons = [
 ]
 
 // Filter with a simple for loop, non functional example
-var males = []
+const males = []
 for (var i = 0; i < persons.length; i++) {
 	if (persons[i].gender === 'Male')
       males.push(persons[i])
@@ -18,7 +18,7 @@ console.log(males.length + " person/s found.")
 // The same with filter array method or high order function 
 // Filter needs a callback that returns the condition (true or false if it matches)
 
-var males2 = persons.filter( function (person) { 
+const males2 = persons.filter( function (person) { 
   return person.gender === 'Male' 
 })
 
@@ -27,14 +27,14 @@ console.log(males2.length + " person/s found.")
 
 
 // shorter way using arrow function inside filter
-var males3 = persons.filter((person) => person.gender === 'Male' )
+const males3 = persons.filter((person) => person.gender === 'Male' )
 
 console.log(males3.length + " person/s found.")
 
 
 // we can also create the callback function separeted from the filter function that
 // improves readability
-var isFemale = (person) => person.gender === 'Female' 
+const isFemale = (person) => person.gender === 'Female' 
 
 males4 = persons.filter(isFemale)
 
