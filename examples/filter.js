@@ -15,8 +15,8 @@ for (var i = 0; i < persons.length; i++) {
 
 console.log(males.length + " person/s found.")
 
-// The same with filter array method functional way
-// Filter need a callback that retuns condition true or false if there is some match
+// The same with filter array method or high order function 
+// Filter needs a callback that returns the condition (true or false if it matches)
 
 var males2 = persons.filter( function (person) { 
   return person.gender === 'Male' 
@@ -38,7 +38,7 @@ var isFemale = (person) => person.gender === 'Female'
 
 males4 = persons.filter(isFemale)
 
-console.log(males3.length + " person/s found.")
+console.log(males4.length + " person/s found.")
 
 
 
