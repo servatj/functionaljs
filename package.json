@@ -1,0 +1,29 @@
+{
+  "name": "functionaljs",
+  "version": "1.0.0",
+  "description": "In this repo i will save my  practices to Functional programming with javascript and  node js. ",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.0.0-canary.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/servatj/functionaljs.git"
+  },
+  "author": "Josep Servat Lorca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/servatj/functionaljs/issues"
+  },
+  "homepage": "https://github.com/servatj/functionaljs#readme"
+}
