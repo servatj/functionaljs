@@ -9,6 +9,7 @@ const persons = [
 
 // Problem: We want a new array made from persons array that has all the names of the persons 
 // Solution with For loop
+// Map transforms and array into an array of the same size
 const names = []
 for (var i = 0; i < persons.length; i++) {
   names.push(persons[i].name)

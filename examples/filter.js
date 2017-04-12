@@ -17,6 +17,7 @@ console.log(males.length + " person/s found.")
 
 // The same with filter array method or high order function 
 // Filter needs a callback that returns the condition (true or false if it matches)
+// Filter transforms and array into a shorter array
 
 const males2 = persons.filter( function (person) { 
   return person.gender === 'Male' 
