@@ -25,10 +25,9 @@ const output = fs.readFileSync(fileName, 'utf8')
   .reduce((heroes,line) => {
      heroes[line[0]] = heroes[line[0]] || []
      heroes[line[0]].push({
-       name:     line[1],
-       item:     line[2],
-       damage:   line[3],
-       quantity: line[4]
+       item:     line[1],
+       damage:   line[2],
+       quantity: line[3]
       })
       return heroes
    } , {})
